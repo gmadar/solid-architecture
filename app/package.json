@@ -1,0 +1,73 @@
+{
+  "name": "backend-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+<<<<<<< HEAD
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "jest --config jest.config.unit.js",
+=======
+    "start": "NODE_ENV=production node index.js",
+    "dev": "NODE_ENV=development nodemon index.js",
+    "// TODO": "add yarn lint before running tests",
+    "test": "NODE_ENV=test jest --config jest.config.unit.js",
+    "test:int": "NODE_ENV=test jest --config jest.config.integration.js",
+    "test:watch": "NODE_ENV=test yarn lint && jest --watch --onlyChanged --config jest.config.unit.js",
+    "coverage": "jest --coverage --config jest.config.unit.js",
+>>>>>>> 8be51c9974e593cc2b4ed3f31a7e1c92d84c99eb
+    "lint": "standard",
+    "lint:fix": "standard --fix",
+    "console": "node src/segments/interfaces/console/index.js"
+  },
+  "author": "Liran Brimer (liranbri@gmail.com)",
+  "license": "ISC",
+  "dependencies": {
+    "awilix": "^3.0.9",
+    "awilix-express": "^1.1.0",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.3",
+    "cors": "^2.8.4",
+    "dotenv-flow": "^0.2.0",
+    "express": "^4.16.3",
+    "express-promise-router": "^3.0.3",
+    "express-status-monitor": "^1.2.3",
+    "express-winston": "^3.0.1",
+    "fs": "^0.0.1-security",
+    "helmet": "^3.13.0",
+    "http-status": "^1.2.0",
+    "joi": "^14.0.4",
+    "jsonwebtoken": "^8.3.0",
+    "lodash": "^4.17.11",
+    "mustache-express": "^1.2.7",
+    "mysql2": "^1.6.1",
+    "nconf": "^0.10.0",
+    "passport": "^0.4.0",
+    "passport-facebook": "^2.1.1",
+    "passport-google-oauth": "^1.0.0",
+    "passport-jwt": "^4.0.0",
+    "path": "^0.12.7",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.5",
+    "sequelize": "^4.38.1",
+    "serialize-error": "^2.1.0",
+    "structure": "^1.3.0",
+    "swagger-ui-express": "^4.0.1",
+    "winston": "^3.2.0",
+    "winston-daily-rotate-file": "^1.7.2"
+  },
+  "devDependencies": {
+    "jest": "^23.5.0",
+    "rewire": "^4.0.1",
+    "standard": "^12.0.1",
+    "superagent-defaults": "^0.1.14",
+    "supertest": "^3.3.0"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  }
+}
